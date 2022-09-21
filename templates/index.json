@@ -1,0 +1,506 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Bridesmaids Dresses",
+            "title_size": 50,
+            "subheading": "Stunning Styles, Priced Right. Starting $65.99",
+            "link": "shopify:\/\/collections\/bridesmaid-dresses",
+            "link_text": "Shop All",
+            "link_2": "shopify:\/\/collections\/new-bridesmaid-dresses",
+            "link_text_2": "Shop New",
+            "color_accent": "#fae0d9",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/newbaner01.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/newbaner01m1.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "bottom center"
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And optional subtext",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Shop all",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "Shop all",
+            "color_accent": "#000000",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "slideshow-1"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Everyone Is uniquely beautiful"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>We make everyone in the squad uniquely beautiful with bridesmaid dresses<br\/> in all sizes & 50+ colors to mix & match, with 3 free<br\/>swatches before you buy. Plus, most dresses under $100. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "promo-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify:\/\/collections\/all",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 800,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": true
+          }
+        },
+        "promo-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify:\/\/collections\/all",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-center",
+            "focal_point": "80% 50%",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": true,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "promo-0",
+        "promo-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "16583117689b0deab9": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9816223-03.jpg",
+        "image2": "shopify:\/\/shop_images\/9816219-03.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Ready to Ship",
+        "text": "<p>Gorgeous bridesmaid dresses available to ship in 3 days.<\/p><p>See some you like? Don’t delay. Order now and get them in time. Because love doesn't wait.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/ready-to-ship-bridesmaid-dresses",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "chiffon-bridesmaid-dresses",
+            "title": "Chiffon",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "satin-bridesmaid-dresses-gowns",
+            "title": "Satin",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "velvet-bridesmaid-dresses",
+            "title": "Velvet",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "lace-bridesmaid-dresses",
+            "title": "Lace",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collections-0",
+        "featured-collections-1",
+        "featured-collections-3",
+        "featured-collections-2"
+      ],
+      "settings": {
+        "title": "Shop by Fabrics",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "1661147434843558c8": {
+      "type": "featured-collections",
+      "blocks": {
+        "1661147434b0395e41-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridesmaid-dresses-with-pockets",
+            "title": "Pockets",
+            "focal_point": "center center"
+          }
+        },
+        "1661147434b0395e41-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridesmaid-dresses-with-sleeves",
+            "title": "Sleeves",
+            "focal_point": "center center"
+          }
+        },
+        "1661147434b0395e41-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridesmaid-dresses-with-split",
+            "title": "Splits",
+            "focal_point": "center center"
+          }
+        },
+        "1661147434b0395e41-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "modest-bridesmaid-dresses",
+            "title": "Modest",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1661147434b0395e41-0",
+        "1661147434b0395e41-2",
+        "1661147434b0395e41-1",
+        "1661147434b0395e41-3"
+      ],
+      "settings": {
+        "title": "Shop BY Trends",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "165837314420d819af": {
+      "type": "advanced-content",
+      "blocks": {
+        "1658373144ea005e80-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"homecolors\">\n<h2 class=\"section-header__title\">Shop By Colors<\/h2>\n<ul class=\"showcolorsul\">\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/white-bridesmaid-dresses\" alt=\"White Bridesmaid Dresses\" class=\"show-colors show-color-white\" title=\"White Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/burgundy-bridesmaid-dresses\" alt=\"Burgundy Bridesmaid Dresses\" class=\"show-colors show-color-burgundy\" title=\"Burgundy Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/red-bridesmaid-dresses\" alt=\"Red Bridesmaid Dresses\" class=\"show-colors show-color-red\" title=\"Red Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/royal-blue-bridesmaid-dresses\" alt=\"Royal Blue Bridesmaid Dresses\" class=\"show-colors show-color-royal_blue\" title=\"Royal Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/pink-bridesmaid-dresses\" alt=\"Pink Bridesmaid Dresses\" class=\"show-colors show-color-pink\" title=\"Pink Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/navy-blue-bridesmaid-dresses\" alt=\"Navy Blue Bridesmaid Dresses\" class=\"show-colors show-color-navy_blue\" title=\"Navy Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/black-bridesmaid-dresses\" alt=\"Black Bridesmaid Dresses\" class=\"show-colors show-color-black\" title=\"Black Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/plum-bridesmaid-dresses\" alt=\"Plum Bridesmaid Dresses\" class=\"show-colors show-color-plum\" title=\"Plum Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/fuchsia-bridesmaid-dresses\" alt=\"Fuchsia Bridesmaid Dresses\" class=\"show-colors show-color-fuchsia\" title=\"Fuchsia Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/champagne-bridesmaid-dresses\" alt=\"Champagne Bridesmaid Dresses\" class=\"show-colors show-color-champagne\" title=\"Champagne Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/pearl-pink-bridesmaid-dresses\" alt=\"Pearl Pink Bridesmaid Dresses\" class=\"show-colors show-color-pearl_pink\" title=\"Pearl Pink Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/hot-pink-bridesmaid-dresses\" alt=\"Hot Pink Bridesmaid Dresses\" class=\"show-colors show-color-hot_pink\" title=\"Hot Pink Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/coral-bridesmaid-dresses\" alt=\"Coral Bridesmaid Dresses\" class=\"show-colors show-color-coral\" title=\"Coral Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/gold-bridesmaid-dresses\" alt=\"Gold Bridesmaid Dresses\" class=\"show-colors show-color-gold\" title=\"Gold Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/yellow-bridesmaid-dresses\" alt=\"Yellow Bridesmaid Dresses\" class=\"show-colors show-color-yellow\" title=\"Yellow Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/daffodil-bridesmaid-dresses\" alt=\"Daffodil Bridesmaid Dresses\" class=\"show-colors show-color-daffodil\" title=\"Daffodil Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/orange-bridesmaid-dresses\" alt=\"Orange Bridesmaid Dresses\" class=\"show-colors show-color-orange\" title=\"Orange Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/burnt-orange-bridesmaid-dresses\" alt=\"Burnt Orange Bridesmaid Dresses\" class=\"show-colors show-color-burnt_orange\" title=\"Burnt Orange Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/mustard-yellow-bridesmaid-dresses\" alt=\"Mustard Yellow Bridesmaid Dresses\" class=\"show-colors show-color-mustard_yellow\" title=\"Mustard Yellow Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/rust-bridesmaid-dresses\" alt=\"Rust Bridesmaid Dresses\" class=\"show-colors show-color-rust\" title=\"Rust Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/dusty-rose-bridesmaid-dresses\" alt=\"Dusty Rose Bridesmaid Dresses\" class=\"show-colors show-color-dusty_rose\" title=\"Dusty Rose Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/ivory-bridesmaid-dresses\" alt=\"Ivory Bridesmaid Dresses\" class=\"show-colors show-color-ivory\" title=\"Ivory Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/turquoise-bridesmaid-dresses\" alt=\"Turquoise Bridesmaid Dresses\" class=\"show-colors show-color-turquoise\" title=\"Turquoise Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/spa-bridesmaid-dresses\" alt=\"Spa Bridesmaid Dresses\" class=\"show-colors show-color-spa\" title=\"Spa Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/sage-bridesmaid-dresses\" alt=\"Sage Bridesmaid Dresses\" class=\"show-colors show-color-sage\" title=\"Sage Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/dusty-sage-bridesmaid-dresses\" alt=\"Dusty Sage Bridesmaid Dresses\" class=\"show-colors show-color-dusty_sage\" title=\"Dusty Sage Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/olive-green-bridesmaid-dresses\" alt=\"Olive Green Bridesmaid Dresses\" class=\"show-colors show-color-olive_green\" title=\"Olive Green Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/emerald-bridesmaid-dresses\" alt=\"Emerald Bridesmaid Dresses\" class=\"show-colors show-color-emerald\" title=\"Emerald Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/dark-green-bridesmaid-dresses\" alt=\"Dark Green Bridesmaid Dresses\" class=\"show-colors show-color-dark_green\" title=\"Dark Green Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/wisteria-bridesmaid-dresses\" alt=\"Wisteria Bridesmaid Dresses\" class=\"show-colors show-color-wisteria\" title=\"Wisteria Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/light-purple-bridesmaid-dresses\" alt=\"Light Purple Bridesmaid Dresses\" class=\"show-colors show-color-light_purple\" title=\"Light Purple Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/orchid-bridesmaid-dresses\" alt=\"Orchid Bridesmaid Dresses\" class=\"show-colors show-color-orchid\" title=\"Orchid Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/mulberry-bridesmaid-dresses\" alt=\"Mulberry Bridesmaid Dresses\" class=\"show-colors show-color-mulberry\" title=\"Mulberry Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/mauve-bridesmaid-dresses\" alt=\"Mauve Bridesmaid Dresses\" class=\"show-colors show-color-mauve\" title=\"Mauve Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/purple-bridesmaid-dresses\" alt=\"Purple Bridesmaid Dresses\" class=\"show-colors show-color-purple\" title=\"Purple Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/mist-blue-bridesmaid-dresses\" alt=\"Mist Blue Bridesmaid Dresses\" class=\"show-colors show-color-mist_blue\" title=\"Mist Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/sky-blue-bridesmaid-dresses\" alt=\"Sky Blue Bridesmaid Dresses\" class=\"show-colors show-color-sky_blue\" title=\"Sky Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/ocean-blue-bridesmaid-dresses\" alt=\"Ocean Blue Bridesmaid Dresses\" class=\"show-colors show-color-ocean_blue\" title=\"Ocean Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/aqua-blue-bridesmaid-dresses\" alt=\"Aqua Blue Bridesmaid Dresses\" class=\"show-colors show-color-aqua_blue\" title=\"Aqua Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/jay-blue-bridesmaid-dresses\" alt=\"Jay Blue Bridesmaid Dresses\" class=\"show-colors show-color-jay_blue\" title=\"Jay Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/dusty-blue-bridesmaid-dresses\" alt=\"Dusty Blue Bridesmaid Dresses\" class=\"show-colors show-color-dusty_blue\" title=\"Dusty Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/steel-blue-bridesmaid-dresses\" alt=\"Steel Blue Bridesmaid Dresses\" class=\"show-colors show-color-steel_blue\" title=\"Steel Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/stormy-blue-bridesmaid-dresses\" alt=\"Stormy Blue Bridesmaid Dresses\" class=\"show-colors show-color-stormy_blue\" title=\"Stormy Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/ink-blue-bridesmaid-dresses\" alt=\"Ink Blue Bridesmaid Dresses\" class=\"show-colors show-color-ink_blue\" title=\"Ink Blue Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/peacock-bridesmaid-dresses\" alt=\"Peacock Bridesmaid Dresses\" class=\"show-colors show-color-peacock\" title=\"Peacock Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/gray-bridesmaid-dresses\" alt=\"Gray Bridesmaid Dresses\" class=\"show-colors show-color-gray\" title=\"Gray Bridesmaid Dresses\"> <\/a><\/li>\n<li><a href=\"https:\/\/www.lavetir.com\/collections\/lilac-bridesmaid-dresses\" alt=\"Lilac Bridesmaid Dresses\" class=\"show-colors show-color-lilac\" title=\"Lilac Bridesmaid Dresses\"> <\/a><\/li>\n<li><a style=\"color:blue;\" href=\"https:\/\/www.lavetir.com\/collections\/bridesmaid-dresses\" alt=\"Bridesmaid Dresses\" class=\"show-color-more\" title=\"More Bridesmaid Dresses\">Shop more colors<\/a><\/li>\n<\/ul>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1658373144ea005e80-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "home_featured_products": "new-bridesmaid-dresses",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "promo-grid2": {
+      "type": "promo-grid",
+      "blocks": {
+        "promo2-0": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify:\/\/collections\/all",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "100",
+            "height": 720,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "80% 50%",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "promo2-1": {
+          "type": "sale_collection",
+          "settings": {
+            "sale_collection": "on-sale-bridesmaid-dresses",
+            "top_text": "Up to",
+            "middle_text": "36% off",
+            "bottom_text": "Select BD",
+            "width": "50",
+            "color_tint": "#000000",
+            "color_tint_opacity": 0,
+            "boxed": true,
+            "framed": true
+          }
+        },
+        "promo2-2": {
+          "type": "sale_collection",
+          "settings": {
+            "sale_collection": "on-sale-wedding-dresses",
+            "top_text": "Up to",
+            "middle_text": "22% off",
+            "bottom_text": "Select WD",
+            "width": "50",
+            "color_tint": "#000000",
+            "color_tint_opacity": 0,
+            "boxed": true,
+            "framed": true
+          }
+        }
+      },
+      "block_order": [
+        "promo2-0",
+        "promo2-1",
+        "promo2-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "shopify:\/\/collections\/all",
+        "focal_point": "80% 0",
+        "layout": "left",
+        "height": 750,
+        "framed": false,
+        "parallax": true
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "From the journal",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "background_image_position": "center center"
+      }
+    },
+    "1658311797382ff5b5": {
+      "type": "text-columns",
+      "blocks": {
+        "16583117975a3e0211-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 60,
+            "title": "Affordable Prices",
+            "text": "<p>Most of our beautiful bridesmaid dresses are under $100. <\/p>",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/bridesmaid-dresses"
+          }
+        },
+        "16583117975a3e0211-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "Free Custom Size",
+            "text": "<p>Enjoy a perfect fit with free custom size service for all dresses.<\/p>",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/bridesmaid-dresses"
+          }
+        },
+        "16583117975a3e0211-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "Free Swatches",
+            "text": "<p>Yes,  3 free swatches for new customers, discount in cart, no code required! <\/p>",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/color-swatches"
+          }
+        },
+        "b3a4474a-754b-4434-b4f7-0b319e43eaf3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "Easy Return & Exchange",
+            "text": "<p>Simply return it within 14 days for refund. Our stylist will help you out.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16583117975a3e0211-0",
+        "16583117975a3e0211-1",
+        "16583117975a3e0211-2",
+        "b3a4474a-754b-4434-b4f7-0b319e43eaf3"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": true
+      }
+    },
+    "1662362715e6e2b276": {
+      "type": "advanced-content",
+      "blocks": {
+        "166236271560a6abb5-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "166236271560a6abb5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"page-width\"><p><h2>Your perfect Choices for Wedding Dresses & Bridesmaid Dresses<\/h2><p>\n\n<p>Lavetir is excited to be a part of your journey as you begin this new phase in your life with the one you love. We will be there for you every step of the way, helping you to create the wedding of your dreams. When you are ready to take the first step towards your dream wedding, we have a wide selection of cheap wedding dresses and affordable bridesmaid dresses to choose from. No matter what style you are envisioning for your big day, we have the perfect dress for you. Visit us today at Lavetir.com and start planning your dream wedding! <\/p>\n<div class=\"title\"><a href=\"https:\/\/www.lavetir.com\/collections\/wedding-dresses\">Wedding Dresses<\/a><\/div>\n<p>Your wedding day is one of the most important days of your life, so it's important to find the perfect dress. <br \/>At Lavetir, we have a wide selection of cheap wedding dresses under $100 to suit any bride. Whether you're looking for a classic ball gown, a modern mermaid dress, or something else entirely, we have something to suit your style. <br \/>Plus, our cheap plus size wedding dresses under $100 are designed to flatter women of all shapes and sizes. And if you're having a winter wedding, our long sleeve wedding dresses will keep you warm without sacrificing style. So whatever you're looking for, Lavetir is sure to have the perfect dress for you.<P>\n<div class=\"title\"><a href=\"https:\/\/www.lavetir.com\/collections\/bridesmaid-dresses\">Bridesmaid Dresses<\/a><\/div>\n<p>Your bridesmaids are an essential part of your wedding, so choose their dresses carefully. Make your big day even more special by outfitting your ladies in beautiful <a href=\"https:\/\/www.lavetir.com\/collections\/sage-bridesmaid-dresses\">sage bridesmaid dresses<\/a>. Or, go for <a href=\"https:\/\/www.lavetir.com\/collections\/dusty-rose-bridesmaid-dresses\">dusty rose bridesmaid dresses<\/a> to add a touch of elegance and class to your celebration. <a href=\"https:\/\/www.lavetir.com\/collections\/burnt-orange-bridesmaid-dresses\">Burnt orange bridesmaid dresses<\/a> are also a lovely option, reminding you of innocent maiden dreams and romantic fairy tales.<br \/>Don't forget to <a href=\"https:\/\/www.lavetir.com\/collections\/bridesmaid-dresses-with-sleeves\"> bridesmaid dresses with sleeves<\/a> to keep your girls warm if you go for a winter wedding. Whatever silhouette or style you choose, we have the perfect gowns for your sisters and friends.<p><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "166236271560a6abb5-0",
+        "166236271560a6abb5-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "rich-text",
+    "promo-grid",
+    "16583117689b0deab9",
+    "featured-collections",
+    "1661147434843558c8",
+    "165837314420d819af",
+    "featured-collection",
+    "promo-grid2",
+    "background-image-text",
+    "blog-posts",
+    "map",
+    "1658311797382ff5b5",
+    "1662362715e6e2b276"
+  ]
+}

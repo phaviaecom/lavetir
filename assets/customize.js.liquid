@@ -1,0 +1,212 @@
+(() => {
+	$(document).ready(() => {
+
+		if( LAVETIR.templateName == 'collection' ){
+			colorSwatchActiveCollection();
+		}
+
+		if(LAVETIR.templateName == 'product' ){
+			
+			setTimeout(() => {
+				let text = `<div class="size-chart">
+				(<svg width="24px" height="13px" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+				<path d="M 0 8 L 0 24 L 32 24 L 32 8 Z M 2 10 L 5 10 L 5 17 L 7 17 L 7 10 L 9 10 L 9 14 L 11 14 L 11 10 L 13 10 L 13 17 L 15 17 L 15 10 L 17 10 L 17 14 L 19 14 L 19 10 L 21 10 L 21 17 L 23 17 L 23 10 L 25 10 L 25 14 L 27 14 L 27 10 L 30 10 L 30 22 L 2 22 Z"/></svg> 
+					<a href="javascript:void(0)" class="size-chart-btn" >Size Chart</a> | 
+					<a href="javascript:void(0)" class="measurement-btn" >Measurement</a> )
+				</div>`;
+				
+				$('#infiniteoptions-container .global-size-option .spb-label-tooltip').append(text);
+				
+				sizeChartPopup();
+				measurementPopup();
+				closeModel();
+
+				//hanld show the image measurement
+				if($('.global-height-option').length > 0){
+					$('.global-height-option').append($('#image-mini-size'));
+					$('#image-mini-size').removeClass('hidden');
+				}
+
+				//Show the size specific
+				if($('.global-height-option').length > 0){
+					$('.global-height-option').after($('#lists-detail-size'));
+					showSpecificSizeChart();
+				}
+
+				//Add the text to color options
+				if($('.variant-wrapper .variant__label')){
+					$('.variant-wrapper .variant__label').append($('#order-a-swatch'));
+					$('#order-a-swatch').removeClass('hidden');
+				}
+
+				if($('#infiniteoptions-container #Color-0-0')){
+					$('#infiniteoptions-container #Color-0-0').append($('#order-a-swatch'));
+					$('#order-a-swatch').removeClass('hidden');
+				}
+
+				//Add the text more options color just show shopify options only
+				if($('.variant-wrapper fieldset[name="Color"]')){
+					$('.variant-wrapper fieldset[name="Color"]').after($('#shop-more-color'))
+				}
+
+			} , 1500);
+			
+			colorSwatchActiveProduct();
+
+		}
+	})
+
+
+	let colorSwatchActiveCollection = () => {
+	
+		const queryString = window.location.search;
+		const urlPathName = window.location.pathname;
+		const urlParams = new URLSearchParams(queryString);
+
+		let colorUrl = '';
+
+		if(urlParams.has('color')){
+
+			colorUrl = urlParams.get('color').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '').replace(/^-/, '');
+		}else{
+			let getVariantsFromPath = urlPathName.split('/')[2].split('-bridesmaid-dresses');
+			colorUrl = getVariantsFromPath[0];
+		}
+
+		$('.grid-product').each((index, items) => {
+			let productID =  $(items).data('product-id');
+            let listVariantProduct = `.grid-product__colors--${productID}`;
+			if($(listVariantProduct).length > 0){
+
+				$(`${listVariantProduct} .color-swatch`).each((index, item) => {
+					
+					let itemImage = $(item).data('variant-image');
+					let itemProductId = $(item).data('product-id');
+					let variantColor = $(item).data('color-variant');
+					let idVariant = $(item).data('variant-id'); //data-variant-id="42984487911682"
+
+					if(productID == itemProductId && variantColor == colorUrl){
+						$(items).find(`.image-product-${itemProductId}`).attr('src', itemImage);
+						let hrefVariant = `${$(items).find('.grid-product__link').attr('href')}?variant=${idVariant}`;
+						$(items).find('.grid-product__link').attr('href', hrefVariant);
+					}
+				})
+			}
+			
+		});
+	}
+
+	let sizeChartPopup = () => {
+		if($('.size-chart-btn')){
+			$('.size-chart-btn').on('click', (e) => {//
+				!$('#sizeChart').hasClass('show') ? $('#sizeChart').addClass('show') : ''; 
+				!$('#overLay').hasClass('show') ? $('#overLay').addClass('show') : ''; 
+				$('body').css({'overflow': 'hidden'});
+			})
+		}
+	}
+
+	let measurementPopup = () => {
+		if($('.measurement-btn')){
+			$('.measurement-btn').on('click', (e) => {
+				!$('#measurementPopup').hasClass('show') ? $('#measurementPopup').addClass('show') : ''; 
+				!$('#overLay').hasClass('show') ? $('#overLay').addClass('show') : '';
+				$('body').css({'overflow': 'hidden'});
+			})
+		}
+
+		$('#image-mini-size').on('click', (e) => {
+			!$('#measurementPopup').hasClass('show') ? $('#measurementPopup').addClass('show') : ''; 
+			!$('#overLay').hasClass('show') ? $('#overLay').addClass('show') : '';
+			$('body').css({'overflow': 'hidden'});
+		})
+	}
+
+	let closeModel = () => {
+		if($('.close-modal')){
+			$('.close-modal').on('click', (e) => {
+				$('#sizeChart').hasClass('show') ? $('#sizeChart').removeClass('show') : ''; 
+				$('#overLay').hasClass('show') ? $('#overLay').removeClass('show') : '';
+				$('#measurementPopup').hasClass('show') ? $('#measurementPopup').removeClass('show') : '';
+				$('body').css({'overflow': 'unset'});
+			})
+		}
+		$('#overLay').on('click', (e) => {
+			$('#sizeChart').hasClass('show') ? $('#sizeChart').removeClass('show') : ''; 
+			$('#overLay').hasClass('show') ? $('#overLay').removeClass('show') : '';
+			$('#measurementPopup').hasClass('show') ? $('#measurementPopup').removeClass('show') : '';
+			$('body').css({'overflow': 'unset'});
+		})
+	}
+
+	let colorSwatchActiveProduct = () => {
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+
+		let colorUrl = '';
+
+		if(urlParams.has('color')){
+			$('#shop-more-color').removeClass('hidden');
+			colorUrl = urlParams.get('color').replace('_', ' ').toLowerCase();
+			showTheShopMoreColor(colorUrl);
+		}
+
+		if($('fieldset[name="Color"] .variant-input').length > 0){
+
+			$('fieldset[name="Color"] .variant-input').each((idx, item) => {
+				
+				if($(item).attr('data-value').toLowerCase() == colorUrl){
+					$(item).on('click', (e) => {});
+					$(item).find('input[type="radio"]').click();
+				}
+
+				let loaded_page_1 = $(item).find('input[type="radio"]').attr('checked') == "checked" ? $(item).find('input[type="radio"]').val() : '';
+
+				$(item).find('input[type="radio"]').on('click', (e) => {
+					let valueColor = $(e.target).val();
+					showTheShopMoreColor(valueColor.toLowerCase());
+				})
+
+			});
+		}
+		
+	}
+
+	let showSpecificSizeChart = () => {
+		$('.specific--size.active').css({'opacity': 1});
+		$('.global-size-option span label input[type="radio"]').on('click', (e) => {
+			let size = $(e.target).val();
+
+			$('#lists-detail-size li').each((idx, item) => {
+				let dataSize = $(item).attr('data-size');
+				if($(item).hasClass('active')){
+					$(item).removeClass('active');
+					$(item).addClass('hidden');
+				}
+				if(size == dataSize){
+					$(item).addClass('active');
+					$(item).removeClass('hidden');
+				}else{
+					$(item).removeClass('active');
+					$(item).addClass('hidden');
+				}
+			})
+
+		})
+	}
+
+	let showTheShopMoreColor = (valueColor) => {
+
+		let listColors = LAVETIR.listColors.map((item) => {
+			return item.toLowerCase();
+		});
+		if(listColors.includes(valueColor) && LAVETIR.productType == 'bridesmaid-dresses'){
+			$('#shop-more-color').find('a').attr('href',`/collections/${valueColor.replace(' ', '-').toLocaleLowerCase()}-bridesmaid-dresses`)
+			$('#shop-more-color').hasClass('hidden') ? $('#shop-more-color').removeClass('hidden') : '' ;
+		}else{
+			!$('#shop-more-color').hasClass('hidden') ? $('#shop-more-color').addClass('hidden') : '' ;
+		}
+	}
+
+
+})(jQuery);

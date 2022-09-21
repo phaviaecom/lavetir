@@ -1,0 +1,6 @@
+development:
+  password: shptka_9698239b36a0508de0e346f51e0758fa
+  theme_id: 135380861186
+  store: lavetir.myshopify.com
+  ignore_files:
+    - config/settings_data.json

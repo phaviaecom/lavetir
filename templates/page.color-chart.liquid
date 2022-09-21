@@ -1,0 +1,108 @@
+<div class="page-width page-width--narrow page-content">
+  {%- render 'breadcrumbs' -%}
+  <header class="section-header">
+    <h1 class="section-header__title">{{ page.title }}</h1>
+  </header>
+<script src="{{ 'jquery.min.1.11.3.js' | asset_url | split: '?' | first }}"></script>
+<style>
+.chartclose {
+	width:12px;
+	height:12px;
+	position:absolute;
+	top:10px;
+	right:20px;
+	cursor:pointer;
+	transition:all .8s;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index:1000;
+}
+.chartclose:hover {
+	transform:rotateZ(180deg);
+}
+.chartclose:hover > span {
+	background-color:#049EF4;
+	transition:all .8s;
+}
+.chartclose > span {
+	display:none;
+	padding:1px;
+	border-radius:4px;
+	height:12px;
+	background-color:#f5f5f5;
+	position:absolute;
+}
+.chartclose > span:nth-child(1) {
+	transform:rotateZ(45deg);
+}
+.chartclose > span:nth-child(2) {
+	transform:rotateZ(-45deg);
+}
+.chartmask {
+	display:none;
+	background-color:rgba(0,0,0,.3);
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	top:0 !important;
+	left:0;
+    cursor: pointer;
+}
+}
+.colorchartul img, .colorchartul li{
+    text-align: center;
+    margin: unset;    
+}
+.popupchart {
+    width: 200px;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+} 
+@media only screen and (max-width:768px) {
+.popupchart {
+    width: 200px;
+    margin: 50% auto;
+    position: unset;
+    top: unset;
+    left: unset; 
+}   
+.colorchartul img, .colorchartul li {
+    margin: 0 2px 7px 0;
+}
+.show-chiffon-colorchart,.show-silksatin-colorchart {
+    height: 24px !important;
+}  
+}
+</style>
+  <div class="rte rte--nomargin">
+    {{ page.content }}
+  </div>
+</div>
+<div class="chartmask"></div>
+<script>
+$(".show-colorchart").click(function() {
+    $(".chartmask").fadeIn(500);
+    $(".chartclose>span").fadeIn(200);
+    let src = $(this)[0].src;
+    let dom =
+        `<div class="popupchart">
+                    <img src="${src}" alt="" style="width: 100%" />
+                </div>`
+
+    $(".chartmask").html(dom)
+});
+
+$(".chartmask").click(function() {
+    $(this).fadeOut(500);
+    $(".chartclose>span").fadeOut(200);
+    $(this).html("");
+});
+
+$(".chartclose").click(function() {
+    $(".chartmask").fadeOut(500);
+    $(".chartclose>span").fadeOut(200);
+    $(".chartmask").html("");
+});
+</script>

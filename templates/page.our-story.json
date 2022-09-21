@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Our Story",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/the-start-to-a-fun-weekend-with-her-bridesmaids-new.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/the-start-to-a-fun-weekend-with-her-bridesmaids.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Dresses that make you uniquely beautiful"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Find perfect bridesmaid dress in your own size and choose from 50+ colors to mix & match.  An easy shopping experience that’s fun and hassle-free. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "165891374500504a57": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bride-and-groom-walk-the-beach-new.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Our Mission",
+        "text": "<p>Empower your beauty - that’s what we’re all about.<\/p><p>We believe that everyone is unique and beautiful no matter your size, race, religion, or anything, You're always beautiful. Be your own kind of beautiful<\/p><p>Lavetir connects all the needed resources to offer you a better way for bridesmaid dresses shopping, with all sizes (0 -32W) & free custom size service, and 50+ colors. Why? Because everyone in the crew is unique and beautiful!   <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "16589156970eb974fd": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/68106-Silver.jpg",
+        "image2": "shopify:\/\/shop_images\/9816222-Mist_Blue.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Under $100",
+        "text": "<p>Looking for the perfect bridesmaid dress under $100? Look no further! <\/p><p>Our entire selection of bridesmaid dresses are all $99 and under, and they are meticulously designed with the fabric, fit, and color in mind. With a wide range of styles to choose from, you're sure to find the perfect dress for your big day!<br\/><\/p>",
+        "button_label": "Check Collection",
+        "button_link": "shopify:\/\/collections\/bridesmaid-dresses",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "165891446087960775": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9816210-Black.jpg",
+        "image2": "shopify:\/\/shop_images\/9816207-Light_Blue.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "All Sizes",
+        "text": "<p>Your go-to gals are all unique, so honor everything that makes your girls beautiful. Lavetir understands everyone's size & body figure differ. <\/p><p>At Lavetir, dresses flatters every figure with sizes up to 32W. Plus, free custom size service is available for a perfect fit!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1658914894d4f846ff": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Lav_Steel_Blue.jpg",
+        "image2": "shopify:\/\/shop_images\/Lav_Peach_Pink.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Swatches",
+        "text": "<p>Nothing beats seeing swatches IRL before committing to a bridesmaid dress. Getting color swatches can make wedding planning so much easier. <\/p><p>We provide 3 Free Swatches to help you mix and match. Yes, 100% Free!<\/p>",
+        "button_label": "Pick Yours",
+        "button_link": "shopify:\/\/collections\/color-swatches",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "home_featured_products": "new-bridesmaid-dresses",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "disabled": true,
+      "blocks": {
+        "column1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "column2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "column3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "background_image_position": "center center"
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "title": "Contact us",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "rich-text",
+    "165891374500504a57",
+    "16589156970eb974fd",
+    "165891446087960775",
+    "1658914894d4f846ff",
+    "featured-collection",
+    "text-columns",
+    "map",
+    "form"
+  ]
+}

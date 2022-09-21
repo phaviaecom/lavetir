@@ -1,0 +1,191 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": false,
+        "filter_style": "drawer",
+        "enable_color_swatches": false,
+        "per_row": 4,
+        "rows_per_page": 7,
+        "mobile_flush_grid": false
+      }
+    },
+    "1663207247be28f764": {
+      "type": "featured-collections",
+      "blocks": {
+        "166320724723ac3754-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridesmaid-dresses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "166320724723ac3754-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "wedding-dresses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "101dbd59-967c-4d25-b190-fc50153292ec": {
+          "type": "collection",
+          "settings": {
+            "collection": "ball-gown-wedding-dresses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "166320724723ac3754-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "homecoming-dresses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "166320724723ac3754-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "prom-dresses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "ab1b156c-2243-4331-9974-5ba4897d4616": {
+          "type": "collection",
+          "settings": {
+            "collection": "bridal-bouquets",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "1d089f02-94d8-4f19-a0ad-0c4be32c6aa9": {
+          "type": "collection",
+          "settings": {
+            "collection": "wedding-veils",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "63279dfc-f201-43d5-b8f8-b0808f794e24": {
+          "type": "collection",
+          "settings": {
+            "collection": "petticoats",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "166320724723ac3754-0",
+        "166320724723ac3754-1",
+        "101dbd59-967c-4d25-b190-fc50153292ec",
+        "166320724723ac3754-2",
+        "166320724723ac3754-3",
+        "ab1b156c-2243-4331-9974-5ba4897d4616",
+        "1d089f02-94d8-4f19-a0ad-0c4be32c6aa9",
+        "63279dfc-f201-43d5-b8f8-b0808f794e24"
+      ],
+      "settings": {
+        "title": "Recommended Collections",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "166320723015bba4a8": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Plus Size Bridesmaid Dresses",
+        "home_featured_products": "plus-size-bridesmaid-dresses",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "16632073778a2d24f9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Prom Dresses",
+        "home_featured_products": "prom-dresses",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "166320762152f91c5e": {
+      "type": "featured-product",
+      "blocks": {
+        "166320762182ad50eb-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "166320762182ad50eb-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "166320762182ad50eb-2": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "166320762182ad50eb-3": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "4ce302b7-76c1-4f2e-963d-b208d0b5a2bb": {
+          "type": "custom",
+          "settings": {
+            "code": "<p class=\"swatchinsearch\"><a hre=\"\/products\/color-swacthes?ref=search\">Go to Order a Color Swatch<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "166320762182ad50eb-0",
+        "166320762182ad50eb-1",
+        "166320762182ad50eb-2",
+        "166320762182ad50eb-3",
+        "4ce302b7-76c1-4f2e-963d-b208d0b5a2bb"
+      ],
+      "settings": {
+        "featured_product": "swatches",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "small",
+        "product_zoom_enable": false,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1663207247be28f764",
+    "166320723015bba4a8",
+    "16632073778a2d24f9",
+    "166320762152f91c5e"
+  ]
+}
