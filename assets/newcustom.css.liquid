@@ -318,12 +318,25 @@ button.close-modal img {
   }
 }
 /* Main style */
+.main-style .grid--flush-bottom{
+  padding-left: 11px;
+}
+.main-style .grid--flush-bottom .grid__item{
+  padding-left: 10px;
+}
 @media only screen and (min-width: 769px) {
 	.page-width.page-styles{
 		padding-top: 30px;
-		padding-bottom: 50px;
+		padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
 	}
 	.main-style .medium-up--four-fifths{
 		width: 100%;
 	}
+}
+@media only screen and (max-width:768px){
+  .main-style .grid--flush-bottom{
+    padding-left: 5px;
+  }
 }
