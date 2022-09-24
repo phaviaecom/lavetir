@@ -54,6 +54,10 @@
 			colorSwatchActiveProduct();
 
 		}
+
+		if(LAVETIR.templateSuffix == 'styles') {	
+			renderVariantProduct();
+		}
 	})
 
 
@@ -207,6 +211,111 @@
 			!$('#shop-more-color').hasClass('hidden') ? $('#shop-more-color').addClass('hidden') : '' ;
 		}
 	}
+	
+	// implement styles page
+	let renderVariantProduct = async () => {
+
+		const queryString = window.location.search;
+		const urlPathName = window.location.pathname;
+		const urlParams = new URLSearchParams(queryString);
+		const rootVariant = $('#variant_product');
+
+		let paramVariant = urlPathName.split('/')[3];
+		paramVariant ?
+			fetch(`/products/${paramVariant}.json`)
+			.then((response) => response.json())
+			.then((data) => {
+
+					let dataImage = data.product.images;
+					let dataVariant = data.product.variants;
+					let handleUrl = '';
+					let html = '';
+					let variantId = '';
+
+					for (let i = 0; i < dataImage.length; i++) {
+						let labelVariant = '';
+						if(dataImage[i].variant_ids.length > 0) {
+							for(let j = 0; j < dataVariant.length; j++) {
+								if(dataImage[i].variant_ids[0] == dataVariant[j].id){
+									labelVariant = dataVariant[j].title;
+									variantId = dataVariant[j].id;
+								}
+							}
+						}
+
+						handleUrl = variantId != '' ? `/products/${data.product.handle}/?variant=${variantId}` : `/products/${data.product.handle}`;
+					
+						html += `
+						<div class="grid__item small--one-half medium-up--one-quarter aos-init" data-aos="row-of-4">
+							<div style="margin: 0 auto;" class="colormaxwidth">
+								<a href="${handleUrl}">
+									<div class="image-wrap text-spacing" style="height: 0; padding-bottom: 133.33333333333334%;">
+										<img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900]"
+										data-aspectratio="0.75" data-sizes="auto" data-srcset="${dataImage[i].src}"
+										sizes="300px" srcset="${dataImage[i].src}"
+										alt="${ data.product.title }">
+										<noscript>
+											<img class="lazyloaded" src="${dataImage[i].src}" alt="">
+										</noscript>
+									</div>
+								</a>
+							</div>
+							<h3>
+								${labelVariant}
+							</h3>
+						</div>
+						`;
+					}
+
+					$('#variant_product').html(html);
+					loadImageSection();
+
+				}
+			)
+		:
+			$('#variant_product').html($('#style_items').html());
+		;	
+	 }
+
+	 // set Loaded image
+	let loadImageSection = function() {
+		function Utils() {}
+		Utils.prototype = {
+			constructor: Utils,
+			isElementInView: function (element, fullyInView) {
+				var pageTop = $(window).scrollTop();
+				var pageBottom = pageTop + $(window).height();
+				var elementTop = $(element).offset().top;
+				var elementBottom = elementTop + $(element).height();
+			
+				if (fullyInView === true) {
+				return pageTop < elementTop && pageBottom > elementBottom;
+				} else {
+				return elementTop <= pageBottom && elementBottom >= pageTop;
+				}
+			}
+		};
+		
+		var Utils = new Utils();
+
+		$(window).on("load", addFadeIn());
+		$(window).scroll(function () {
+			addFadeIn();
+		});
+		
+		function addFadeIn() {
+		var classToFadeIn = ".grid__item";
+		
+		$(classToFadeIn).each(function (index) {
+			var isElementInView = Utils.isElementInView($(this), false);
+			if (isElementInView) {
+			if (!$(this).hasClass("aos-animate")) {
+				$(this).addClass("aos-animate");
+			}
+			} 
+		});
+		}	
+	};
 
 
 })(jQuery);

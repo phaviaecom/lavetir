@@ -1,22 +1,19 @@
-<div id="shopify-section-template--16440121786626__16626008084ddcdc80"
-class="shopify-section index-section">
-	<div class="page-width">
-		<div class="grid grid--uniform grid--flush-bottom">
-			{% comment %}
-			 {%- render "item-style-static" -%} {% endcomment %}
-
-			 {{ template.suffix }}
+<div id="variant_product" class="grid grid--uniform grid--flush-bottom">
+	<div class="profile-main-loader">
+		<div class="loader">
+			<svg class="circular-loader"viewBox="25 25 50 50" >
+			<circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#ff4f33" stroke-width="2" />
+			</svg>
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript" defer="defer">
-
-    $(document).ready(() => {
-		console.log($('.grid--uniform'));
-		
-		console.log("Hello Styles!");
-	});
-	   
- 
-</script>
+<div id="style_items" style="display: none ;">
+    {% render 'item-style-static' %}
+</div>
+{% schema %}
+{
+	"name": "Main Style",
+	"class": "main-style",
+	"settings": []
+}
+{% endschema %}
