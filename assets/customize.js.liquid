@@ -52,7 +52,7 @@
 			} , 1500);
 			
 			colorSwatchActiveProduct();
-
+			displayThumbNoGroup();
 		}
 
 		if(LAVETIR.templateSuffix == 'styles') {	
@@ -316,6 +316,24 @@
 		});
 		}	
 	};
+
+	//Dislay the thumbnail 
+	let displayThumbNoGroup = () => {
+		
+		if($('.product__thumbs--scroller div[data-group="color_none"]').length > 0) {
+			$('.product__thumbs--scroller div[data-group="color_none"]').removeClass('hide');
+		}
+
+		if($('.variant-input-wrap input[name="Color"]').length > 0) {
+			$('.variant-input-wrap input[name="Color"]').on('click', function(e) {
+				let removeHideClass = setTimeout(function() {
+					if($('.product__thumbs--scroller div[data-group="color_none"]').length > 0) {
+						$('.product__thumbs--scroller div[data-group="color_none"]').removeClass('hide');
+					}
+				}, 500)
+			})
+		}
+	}
 
 
 })(jQuery);

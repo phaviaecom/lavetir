@@ -77,6 +77,8 @@
                 {% if image_set %}
                   data-set-name="{{image_set_group}}"
                   data-group="{{image_set_full}}"
+                {% else %}
+                  data-group="color_none"   
                 {% endif %}>
                 <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: media.preview_image.aspect_ratio }}%;">
                   <a
