@@ -230,10 +230,10 @@
 					let dataVariant = data.product.variants;
 					let handleUrl = '';
 					let html = '';
-					let variantId = '';
-
+					
 					for (let i = 0; i < dataImage.length; i++) {
 						let labelVariant = '';
+						let variantId = '';
 						if(dataImage[i].variant_ids.length > 0) {
 							for(let j = 0; j < dataVariant.length; j++) {
 								if(dataImage[i].variant_ids[0] == dataVariant[j].id){
@@ -248,7 +248,7 @@
 						html += `
 						<div class="grid__item small--one-half medium-up--one-quarter aos-init" data-aos="row-of-4">
 							<div style="margin: 0 auto;" class="colormaxwidth">
-								<a href="${handleUrl}">
+								<a href="${handleUrl}" data-variants="${variantId}">
 									<div class="image-wrap text-spacing" style="height: 0; padding-bottom: 133.33333333333334%;">
 										<img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900]"
 										data-aspectratio="0.75" data-sizes="auto" data-srcset="${dataImage[i].src}"
@@ -334,6 +334,25 @@
 			})
 		}
 	}
-
+	
+	//Lazy loadding when main image still not loaded
+	var lazyImages = [].slice.call(document.querySelectorAll(".loader"));
+	if ("IntersectionObserver" in window) {
+		let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+		entries.forEach(function(entry) {
+			if (entry.isIntersecting) {
+			let lazyImage = entry.target;
+			lazyImage.classList.add("lazy");
+			lazyImageObserver.unobserve(lazyImage);
+			}
+		});
+		});
+	
+		lazyImages.forEach(function(lazyImage) {
+		lazyImageObserver.observe(lazyImage);
+		});
+	} else {
+		// Possibly fall back to event handlers here
+	}
 
 })(jQuery);
