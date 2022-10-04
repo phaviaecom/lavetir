@@ -230,7 +230,25 @@
 					let dataVariant = data.product.variants;
 					let handleUrl = '';
 					let html = '';
-					
+					let priceProduct = '';
+					if(data.product.variants.length > 0 ) {
+						let comparePrice = data.product.variants[0].compare_at_price;
+						let price = data.product.variants[0].price;
+					    priceProduct = `
+						<div class="grid-product__price">
+							<span class="grid-product__price--original">\$${comparePrice}</span>
+							<span class="visually-hidden">Sale price</span>\$${price}
+						</div>
+						`;
+					}
+					let description = `
+					<h3 class="product-title">${data.product.title}</h3>
+					${priceProduct}
+					<div class="product-description">${data.product.body_html}</div>
+					`;
+
+					console.log(data.product);
+
 					for (let i = 0; i < dataImage.length; i++) {
 						let labelVariant = '';
 						let variantId = '';
@@ -268,6 +286,7 @@
 					}
 
 					$('#variant_product').html(html);
+					$('#style_description').html(description);
 					loadImageSection();
 
 				}

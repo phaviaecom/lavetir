@@ -1,48 +1,56 @@
 <div class="page-width page-width--narrow page-content page-styles">
   {%- render 'breadcrumbs' -%}
   <header class="section-header">
-    <h1 class="section-header__title">{{ page.title }}</h1>
+    <h1 class="section-header__title">{{ page.title }}
+    </h1>
+    <div class="page__style-description" id="style_description">
+      {%- comment -%}
+        The description here
+      {%- endcomment -%}
+    </div>
   </header>
-{% style %}
-.index-section {
-    margin: 25px 0;
-}  
-.grid__item {
-    padding-left: 7px;
-}
-.grid__item h3 {
-    font-size: 17px;
-    text-align: center;
-    letter-spacing: 2px;
-}  
-.btn--small {
-    font-size: 11px;  
-}  
-.grid--flush-bottom>.grid__item {
-    margin-bottom: 7px;
-}  
-.colormaxwidth {
-    max-width: 500px; 
-}  
-@media only screen and (min-width: 769px) {
-.page-full, .page-width {
-    padding: 0 5px;
-}
-}   
-@media only screen and (max-width: 768px) {
-.grid {
-   /* margin-left: -30px;
+  {% style %}
+    .index-section {
+      margin: 25px 0;
+    }
+    .grid__item {
+      padding-left: 7px;
+    }
+    .grid__item h3 {
+      font-size: 17px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    .btn--small {
+      font-size: 11px;
+    }
+    .grid--flush-bottom > .grid__item {
+      margin-bottom: 7px;
+    }
+    .colormaxwidth {
+      max-width: 500px;
+    }
+    @media only screen and (min-width: 769px) {
+      .page-full,
+      .page-width {
+        padding: 0 5px;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .grid {
+        ;
+        /* margin-left: -30px;
     margin-right: -26px;*/
-}  
-.grid__item h3 {
-    font-size: 13px;
-}   
-}  
-{% endstyle %}
+      }
+      .grid__item h3 {
+        font-size: 13px;
+      }
+    }
+  {% endstyle %}
   <div class="rte rte--nomargin" style="text-align: center;">
     {{ page.content }}
   </div>
-  
+
   {%- section "main-styles" -%}
-  
-</div>
+
+</div>>
