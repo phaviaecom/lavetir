@@ -235,16 +235,33 @@
 						let comparePrice = data.product.variants[0].compare_at_price;
 						let price = data.product.variants[0].price;
 					    priceProduct = `
-						<div class="grid-product__price">
-							<span class="grid-product__price--original">\$${comparePrice}</span>
-							<span class="visually-hidden">Sale price</span>\$${price}
+						<div class="product-block product-block--price">
+							<div class="new-saleprice">
+							<span data-product-price="" class="product__price on-sale">
+							\$${price}
+									
+								</span>
+							
+							<span class="discount-tips"><span style="color:#fff"> | </span><span class="specialoff">free USA shipping</span></span>
+							
+							</div><span data-a11y-price="" class="visually-hidden" aria-hidden="false">
+									Regular price
+								</span>
+								<span data-product-price-wrap="" class="">
+								<span data-compare-price="" class="product__price product__price--compare">\$${comparePrice}
+									</span>
+								</span>
+								<span data-compare-price-a11y="" class="visually-hidden">Sale price</span>
+							<div data-unit-price-wrapper="" class="product__unit-price product__unit-price--spacing  hide"><span data-unit-price=""></span>/<span data-unit-base="">
+							</span>
+							</div>
 						</div>
 						`;
 					}
 					let description = `
 					<h3 class="product-title">${data.product.title}</h3>
 					${priceProduct}
-					<div class="product-description">${data.product.body_html}</div>
+					<div class="product-description" style="overflow-x:auto;">${data.product.body_html}</div>
 					`;
 
 					console.log(data.product);
